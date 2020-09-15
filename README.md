@@ -1,3 +1,3 @@
 This is the README file for the Google Homepage project on TOP.
 
-My finished (and hopefully working) project URL will be entered here:
+My finished (and hopefully working) project URL will be entered here: https://thatblindgeye.github.io/google-homepage/
