@@ -2,7 +2,6 @@ body {
     background: rgb(20, 20, 20);
     color: rgb(219, 218, 218);
     font-family: Arial, sans-serif;
-    height: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -26,8 +25,8 @@ body {
     color: rgb(190, 190, 190);
     text-align: center;
     padding: 14px 16px;
+    margin-top: 5px;
     text-decoration: none;
-    font-size: 0.9rem;
   }
 
 .navbar a, .navbar i {
@@ -35,7 +34,7 @@ body {
     margin-left: 15px;
     padding: 0px 5px 0px 5px;
     color: rgb(190, 190, 190);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-decoration: none;
 }
 
@@ -65,13 +64,17 @@ body {
 
 /* Logo and Search Area */
 
+main {
+    background: rgb(20, 20, 20);
+}
+
 img {
   display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
   margin-bottom: 30px;
+  margin-top: 150px;
 }
 
 .search-container i {
@@ -80,7 +83,6 @@ img {
   }
 
 .search-container {
-    display: flex;
     width: 100%;
     margin-bottom: 20px;
 }
