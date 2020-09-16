@@ -1,71 +1,73 @@
 body {
-    background: rgb(20, 20, 20);
-    color: rgb(219, 218, 218);
-    font-family: Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
+  background: rgb(20, 20, 20);
+  color: rgb(219, 218, 218);
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
+main {
+  background: rgb(20, 20, 20);
+}
 
 /* Upper Navbar */
 
 .navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 20px;
-    left: 0;
-    width: 100%;
-  }
-  
-  .navbar a {
-    float: left;
-    display: block;
-    color: rgb(190, 190, 190);
-    text-align: center;
-    padding: 14px 16px;
-    margin-top: 5px;
-    text-decoration: none;
-  }
+  height: 30px;
+  margin-top: 15px;
+}
 
-.navbar a, .navbar i {
-    display: inline;
-    margin-left: 15px;
-    padding: 0px 5px 0px 5px;
-    color: rgb(190, 190, 190);
-    font-size: 0.8rem;
-    text-decoration: none;
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(190, 190, 190);
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.navbar a,
+.navbar i {
+  display: inline;
+  margin-left: 15px;
+  padding: 0px 5px 0px 5px;
+  color: rgb(190, 190, 190);
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 .navbar button {
-    margin: 0px 20px 0px 20px;
-    padding: 5px 10px;
-    background:rgb(44, 44, 136);
-    border: none;
-    color: rgb(190, 190, 190);
-    font-weight: bolder;
-    font-size: 0.8rem;
+  margin: 0px 20px 0px 20px;
+  padding: 5px 10px;
+  background: rgb(44, 44, 136);
+  border: none;
+  color: rgb(190, 190, 190);
+  font-weight: bolder;
+  font-size: 0.8rem;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .navbar i:hover {
-    cursor: pointer;
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
 }
 
 .navbar button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 /* Logo and Search Area */
 
-main {
-    background: rgb(20, 20, 20);
+#logo-container {
+  clear: both;
 }
 
 img {
@@ -74,99 +76,105 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .search-container i {
-    position: absolute;
-    color: rgb(190, 190, 190);
-  }
+  position: absolute;
+  color: rgb(190, 190, 190);
+}
 
 .search-container {
-    width: 100%;
-    margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
 }
 
 .icon {
-    padding: 15px 15px; 
-    min-width: 40px;
+  padding: 15px 15px;
+  min-width: 40px;
 }
 
 .search-field {
-    background: rgb(20, 20, 20);
-    color: rgb(219, 218, 218);
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 50px;
-    border: 1px rgb(60, 60, 60) solid;
-    border-radius: 50px;
-    padding: 11px 40px 11px 40px;
+  background: rgb(20, 20, 20);
+  color: rgb(219, 218, 218);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50px;
+  border: 1px rgb(60, 60, 60) solid;
+  border-radius: 50px;
+  padding: 11px 40px 11px 40px;
 }
 
-input[type=text]:hover {
-    border: 1px rgba(60, 60, 60, 0.5) solid;
+input[type="text"]:hover {
+  border: 1px rgba(60, 60, 60, 0.5) solid;
 }
 
-.searchbtn, .luckybtn {
-    background: rgb(30, 30, 30);
-    border: 1px rgba(60, 60, 60, 0.5) solid;
-    color: rgb(190, 190, 190);
-    font-size: 1rem;
-    border-radius: 3px;
-    padding: 7px 10px;
-    cursor: pointer;
-    margin: 0px 5px;
+.searchbtn,
+.luckybtn {
+  background: rgb(30, 30, 30);
+  border: 1px rgba(60, 60, 60, 0.5) solid;
+  color: rgb(190, 190, 190);
+  font-size: 1rem;
+  border-radius: 3px;
+  padding: 7px 10px;
+  cursor: pointer;
+  margin: 0px 5px;
 }
 
-.searchbtn:hover, .luckybtn:hover {
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
+.searchbtn:hover,
+.luckybtn:hover {
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
 }
 
 .snippet {
-    font-size: 0.95rem;
-    text-align: center;
-    color: rgb(190, 190, 190)
+  font-size: 0.95rem;
+  text-align: center;
+  color: rgb(190, 190, 190);
+  margin-bottom: 20%;
 }
 
 .snippet a {
-    color: rgb(116, 150, 243);
-    text-decoration: none;
+  color: rgb(116, 150, 243);
+  text-decoration: none;
 }
 
 .snippet a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Lower Navbar */
 
-.footer {
-    overflow: hidden;
-    background-color: rgba(60, 60, 60, 0.3);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-top: 1px rgba(190, 190, 190, 0.1) solid;
-  }
-  
-  .footer a {
-    float: left;
-    display: block;
-    color: rgb(190, 190, 190);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
+footer {
+  background: rgba(60, 60, 60, 0.3);
+  height: 50px;
+  bottom: 0;
+  border-top: 1px rgba(212, 212, 212, 0.3) solid;
+}
 
-  .footer a:hover {
-    text-decoration: underline;
+footer a {
+  float: left;
+  display: block;
+  color: rgb(190, 190, 190);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 100px;
   }
+}
