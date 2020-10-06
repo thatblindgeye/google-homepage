@@ -1,110 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google Homepage</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Google</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="main-container">
-      <nav class="navbar">
-        <a
-          href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"
-        >
-          About</a
-        >
-        <a
-          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjWlLG7iOvrAhUxYTUKHR5oDm4QpMwCCAQ&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf"
-        >
-          Store</a
-        >
-        <form style="float: right" action="https://www.google.com" method="get">
-          <button>Sign In</button>
-        </form>
-        <i class="material-icons" style="font-size: 28px; float: right">apps</i>
-        <a
-          style="float: right"
-          href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl"
-          >Images</a
-        >
-        <a
-          style="float: right"
-          href="https://mail.google.com/mail"
-          target="_blank"
-          >Gmail</a
-        >
+    <header>
+      <nav class="upper-nav">
+        <div class="upper-bar-left">
+          <ul>
+            <li>
+              <a class="upper-nav-item link-nav" href="">About</a>
+            </li>
+            <li>
+              <a class="upper-nav-item link-nav" href="">Store</a>
+            </li>
+          </ul>
+        </div>
+        <div class="upper-bar-right clearfix">
+          <ul>
+            <li>
+              <a class="upper-nav-item link-nav" href="">Gmail</a>
+            </li>
+            <li>
+              <a class="upper-nav-item link-nav" href="">Images</a>
+            </li>
+            <li>
+              <a href=""><i class="material-icons upper-nav-item">apps</i></a>
+            </li>
+            <li>
+              <button class="btn-login upper-nav-item" style="float: right">
+                <a href="" class="sign-in">Sign In</a>
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
+    </header>
 
-      <main>
-        <div id="logo-container">
-          <img
-            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-            style="max-width: 100%; height: auto"
-            alt="Google Logo"
-          />
+    <div class="page-container">
+      <div class="logo-container">
+        <img
+          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          alt="Google logo"
+          class="google-logo"
+        />
+      </div>
+      <form action="https://google.com/search" type="GET">
+        <div class="search-container">
+          <input type="text" name="q" class="searchbar" />
         </div>
-
-        <form
-          action="https://google.com/search"
-          type="GET"
-          style="max-width: 600px; margin: auto"
+        <div class="btn-container">
+          <input type="submit" class="btn-submit" value="Google Search" />
+          <input type="submit" class="btn-lucky" value="I'm Feeling Lucky" />
+        </div>
+      </form>
+      <p class="ad-container">
+        Want to learn how to code? Visit
+        <a href="https://www.theodinproject.com" class="link-ad"
+          >The Odin Project</a
         >
-          <div class="search-container">
-            <i class="fa fa-search icon"></i>
-            <input type="text" class="search-field" name="q" tabindex="1" />
-          </div>
+      </p>
+    </div>
 
-          <div class="button-container">
-            <input type="submit" class="searchbtn" value="Google Search" />
-            <input type="submit" class="luckybtn" value="I'm Feeling Lucky" />
-          </div>
-        </form>
-        <div class="snippet">
-          <p>
-            Want to learn to code? Visit
-            <a href="https://www.theodinproject.com/">The Odin Project</a>
-          </p>
+    <footer>
+      <nav class="lower-nav">
+        <div class="lower-bar-left">
+          <ul>
+            <li>
+              <a class="lower-nav-item link-nav" href="">Advertising</a>
+            </li>
+            <li>
+              <a class="lower-nav-item link-nav" href="">Business</a>
+            </li>
+            <li>
+              <a class="lower-nav-item link-nav" href="">How Search works</a>
+            </li>
+          </ul>
         </div>
-      </main>
-
-      <footer>
-          <a
-            href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000032-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/"
-          >
-            Advertising</a
-          >
-          <a
-            href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/"
-          >
-            Business</a
-          >
-          <a href="https://www.google.com/search/howsearchworks/?fg=1">
-            How Search works</a
-          >
-          <a
-            style="float: right"
-            href="https://policies.google.com/privacy?hl=en&fg=1"
-            >Privacy</a
-          >
-          <a
-            style="float: right"
-            href="https://policies.google.com/terms?hl=en&fg=1"
-            >Terms</a
-          >
-          <a style="float: right" href="https://www.google.com">Settings</a>
-    </div>
-
-    <div>
-      <div></div>
-    </div>
+        <div class="lower-bar-right">
+          <ul>
+            <li>
+              <a class="lower-nav-item link-nav" href="">Privacy</a>
+            </li>
+            <li>
+              <a class="lower-nav-item link-nav" href="">Terms</a>
+            </li>
+            <li>
+              <a class="lower-nav-item link-nav" href="">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -1,180 +1,251 @@
-body {
-  background: rgb(20, 20, 20);
-  color: rgb(219, 218, 218);
-  font-family: Arial, sans-serif;
-  margin: 0px;
-  padding: 0px;
-}
-
 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
   box-sizing: border-box;
 }
 
-main {
-  background: rgb(20, 20, 20);
-}
-
-/* Upper Navbar */
-
-.navbar {
-  height: 30px;
-  margin-top: 15px;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: rgb(190, 190, 190);
-  text-align: center;
-  padding: 14px 16px;
-  margin-top: 5px;
-  text-decoration: none;
-}
-
-.navbar a,
-.navbar i {
-  display: inline;
-  margin-left: 15px;
-  padding: 0px 5px 0px 5px;
-  color: rgb(190, 190, 190);
-  font-size: 0.8rem;
-  text-decoration: none;
-}
-
-.navbar button {
-  margin: 0px 20px 0px 20px;
-  padding: 5px 10px;
-  background: rgb(44, 44, 136);
-  border: none;
-  color: rgb(190, 190, 190);
-  font-weight: bolder;
-  font-size: 0.8rem;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-.navbar i:hover {
-  cursor: pointer;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
-}
-
-.navbar button:hover {
-  cursor: pointer;
-}
-
-/* Logo and Search Area */
-
-#logo-container {
-  clear: both;
-}
-
-img {
-  display: block;
+html {
+  min-height: 100vh;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-top: 100px;
+  background: rgb(24, 26, 27);
+  font-family: Arial;
 }
 
-.search-container i {
+.upper-nav {
+  display: flex;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  background: rgb(31, 34, 35);
+  width: 100%;
+  height: 50px;
   position: absolute;
-  color: rgb(190, 190, 190);
+  flex-wrap: nowrap;
+}
+
+.upper-bar-left {
+  display: flex;
+  margin-left: 5px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.upper-bar-right {
+  display: flex;
+  margin-left: auto;
+  margin-right: 5px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+  vertical-align: middle;
+  float: left;
+}
+
+.upper-nav-item {
+  color: rgb(220, 220, 220);
+  padding: 0 5px;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.material-icons {
+  color: rgba(220, 220, 220, 0.8);
+  font-size: 24px;
+}
+
+.material-icons:hover {
+  color: rgba(220, 220, 220, 1);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.btn-login {
+  background: rgb(14, 68, 158);
+  color: rgb(220, 220, 220);
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign-in {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-container {
+  width: 100%;
+  margin: 75px 0 55px 0;
+}
+
+.google-logo {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
 .search-container {
-  width: 100%;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
 }
 
-.button-container {
+.searchbar {
+  padding: 0 50px;
+  width: 45%;
+  min-width: 325px;
+  color: rgb(220, 220, 220);
+  font-size: 1em;
+  height: 45px;
+  background: rgb(24, 26, 27);
+  border: 1px solid rgb(74, 79, 82);
+  border-radius: 50px;
+  background-image: url("https://www.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png");
+  background-position: 5px 7px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.searchbar:focus,
+.searchbar:hover {
+  border: 1px solid rgba(74, 79, 82, 0.6);
+}
+
+.btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0px;
 }
 
-.icon {
-  padding: 15px 15px;
-  min-width: 40px;
+.btn-submit,
+.btn-lucky {
+  box-sizing: content-box;
+  margin: 0 5px;
+  padding: 8px 15px;
+  font-size: 0.9em;
+  color: rgb(200, 200, 200);
+  background: rgb(32, 34, 36);
+  border: 1px solid rgb(74, 79, 82);
 }
 
-.search-field {
-  background: rgb(20, 20, 20);
-  color: rgb(219, 218, 218);
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 50px;
-  border: 1px rgb(60, 60, 60) solid;
-  border-radius: 50px;
-  padding: 11px 40px 11px 40px;
-}
-
-input[type="text"]:hover {
-  border: 1px rgba(60, 60, 60, 0.5) solid;
-}
-
-.searchbtn,
-.luckybtn {
-  background: rgb(30, 30, 30);
-  border: 1px rgba(60, 60, 60, 0.5) solid;
-  color: rgb(190, 190, 190);
-  font-size: 1rem;
-  border-radius: 3px;
-  padding: 7px 10px;
+.btn-submit:hover,
+.btn-lucky:hover {
   cursor: pointer;
-  margin: 0px 5px;
+  color: rgb(245, 243, 243);
+  background: rgba(32, 34, 36, 0.6);
 }
 
-.searchbtn:hover,
-.luckybtn:hover {
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
-}
-
-.snippet {
-  font-size: 0.95rem;
+.ad-container {
+  margin: 35px 0;
+  height: 300px;
+  font-size: 0.8em;
   text-align: center;
-  color: rgb(190, 190, 190);
-  margin-bottom: 20%;
 }
 
-.snippet a {
-  color: rgb(116, 150, 243);
+p {
+  color: rgb(200, 200, 200);
+}
+
+.link-ad {
+  color: rgb(121, 121, 252);
   text-decoration: none;
 }
 
-.snippet a:hover {
+.link-nav:hover,
+.link-ad:hover {
   text-decoration: underline;
 }
 
-/* Lower Navbar */
-
-footer {
-  background: rgba(60, 60, 60, 0.3);
-  height: 50px;
+.lower-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   bottom: 0;
-  border-top: 1px rgba(212, 212, 212, 0.3) solid;
+  left: 0;
+  background: rgb(31, 34, 35);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  border-top: 1px rgba(51, 56, 58, 0.8) solid;
 }
 
-footer a {
-  float: left;
-  display: block;
-  color: rgb(190, 190, 190);
-  text-align: center;
-  padding: 14px 16px;
+.lower-bar-left {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.lower-bar-right {
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+}
+
+.lower-nav-item {
+  color: rgb(220, 220, 220);
+  padding: 0 5px;
+  margin: 0 5px;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
+@media only screen and (min-width: 650px) {
+  .upper-bar-left {
+    margin-left: 15px;
+  }
 
-@media only screen and (max-width: 600px) {
-  footer {
-    height: 100px;
+  .upper-bar-right {
+    margin-right: 20px;
+  }
+
+  .lower-nav {
+    height: 50px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .lower-bar-left {
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .lower-bar-right {
+    margin-left: auto;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .lower-nav-item,
+  .upper-nav-item {
+    font-size: 0.9em;
+    padding: 0 7px;
+  }
+
+  .material-icons {
+    font-size: 28px;
+  }
+
+  .btn-login {
+    padding: 5px 15px 5px 15px;
   }
 }
